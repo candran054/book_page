@@ -1,0 +1,32 @@
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ 
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe7d6;
+    position: sticky;
+    padding: 10px;
+}
+
+.header_searchInput{
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    border: 1px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search_logo{
+    position: relative;
+    font-size: 15px;
+    bottom: 22px;
+    margin-right: 8px;
+    left: 470px;
+    text-decoration: none;
+}
+    

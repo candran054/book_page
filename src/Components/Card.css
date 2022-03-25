@@ -1,0 +1,73 @@
+/* color variables */
+/* border radius */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0 2px 20px #767b91;
+          box-shadow: 0 2px 20px #767b91;
+  border-radius: 0.2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.card__img {
+  height: 18rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__title {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.card__description {
+  padding: 0 1rem;
+}
+
+.card__btn {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid rgba(116, 51, 2, 0.932);
+  background: transparent;
+  color: rgba(116, 51, 2, 0.932);
+  border-radius: 0.2rem;
+  -webkit-transition: background 200ms ease-in, color 200ms ease-in;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.card:hover .card__btn {
+  background: rgba(116, 51, 2, 0.932);
+  color: white;
+}
+/*# sourceMappingURL=Card.css.map */
